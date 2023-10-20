@@ -257,7 +257,7 @@ section .title::after{
 }
 
 .profile-image:hover {
-    transform: scale(1.1); /* Membesarkan gambar saat di-hover */
+    transform: scale(1.1); 
 }
 /* services section styling */
 .services, .teams{
@@ -374,8 +374,9 @@ section .title::after{
     width: 80%;
 }
 .skills-content .right .php::before{
-    width: 90%;
-}
-.skills-content .right .mysql::before{
     width: 70%;
 }
+.skills-content .right .mysql::before{
+    width: 80%;
+}
+
