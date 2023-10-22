@@ -14,7 +14,7 @@ $(document).ready(function(){
             $('.scroll-up-btn').removeClass("show");
         }
     });
-    
+
     $('.profile-image').hover(function() {
         $(this).attr('src', 'profile-1-hover.jpg');
     }, function() {
@@ -31,4 +31,25 @@ $(document).ready(function(){
     $('.navbar .menu li a').click(function(){
         // applying again smooth scroll on menu items click
         $('html').css("scrollBehavior", "smooth");
+    });
+
+    // toggle menu/navbar script
+    $('.menu-btn').click(function(){
+        $('.navbar .menu').toggleClass("active");
+        $('.menu-btn i').toggleClass("active");
+    });
+
+    // typing text animation script
+    var typed = new Typed(".typing", {
+        strings: ["Student", "Gamer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
+    var typed = new Typed(".typing-2", {
+        strings: ["Student", "Gamer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
     });
