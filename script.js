@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $(window).scroll(function(){
-        // sticky navbar on scroll script
+        // Sticky Navbar
         if(this.scrollY > 20){
             $('.navbar').addClass("sticky");
         }else{
@@ -14,7 +14,8 @@ $(document).ready(function(){
             $('.scroll-up-btn').removeClass("show");
         }
     });
-
+    
+        //efek hover pada gambar
     $('.profile-image').hover(function() {
         $(this).attr('src', 'profile-1-hover.jpg');
     }, function() {
